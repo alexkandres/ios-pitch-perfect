@@ -26,5 +26,8 @@ class ViewController: UIViewController {
         labelOutlet.text = "new text"
     }
     
+    @IBAction func stopRecordingAction(_ sender: Any) {
+        print("stop recording button")
+    }
 }
 
