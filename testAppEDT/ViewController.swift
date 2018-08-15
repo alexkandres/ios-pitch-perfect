@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var stopRecordButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var labelOutlet: UILabel!
     
     //lifecycle - this executes 1st
@@ -17,10 +19,12 @@ class ViewController: UIViewController {
         print("didload")
         // Do any additional setup after loading the view, typically from a nib.
         // no views on screen yet
+        //disable stop recording here
     }
     
     //lifecycle - this executes 2nd
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         //about to be on screen, but not yet
         print("willappear")
     }
@@ -31,6 +35,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func recordAction(_ sender: Any) {
+        //disable record button, it is already playing
         print("Record button pressed")
         labelOutlet.text = "new text"
     }

@@ -53,6 +53,8 @@
                     </view>
                     <connections>
                         <outlet property="labelOutlet" destination="jE4-X8-2n9" id="VaB-1g-fW9"/>
+                        <outlet property="recordButton" destination="zvP-Mq-6to" id="pgv-S5-s1y"/>
+                        <outlet property="stopRecordButton" destination="e6D-7f-Vd6" id="gaW-39-PmM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
