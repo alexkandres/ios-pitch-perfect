@@ -11,9 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var labelOutlet: UILabel!
     
+    //lifecycle - this executes 1st
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("didload")
         // Do any additional setup after loading the view, typically from a nib.
+        // no views on screen yet
+    }
+    
+    //lifecycle - this executes 2nd
+    override func viewWillAppear(_ animated: Bool) {
+        //about to be on screen, but not yet
+        print("willappear")
     }
 
     override func didReceiveMemoryWarning() {
