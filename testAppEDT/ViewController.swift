@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("didload")
+        stopRecordButton.isEnabled = false
+
         // Do any additional setup after loading the view, typically from a nib.
         // no views on screen yet
         //disable stop recording here
@@ -36,12 +38,15 @@ class ViewController: UIViewController {
 
     @IBAction func recordAction(_ sender: Any) {
         //disable record button, it is already playing
-        print("Record button pressed")
-        labelOutlet.text = "new text"
+        labelOutlet.text = "Tap to stop record"
+        recordButton.isEnabled = false
+        stopRecordButton.isEnabled = true
     }
     
     @IBAction func stopRecordingAction(_ sender: Any) {
-        print("stop recording button")
+        stopRecordButton.isEnabled = false
+        recordButton.isEnabled = true
+        labelOutlet.text = "Tap to record"
     }
 }
 
