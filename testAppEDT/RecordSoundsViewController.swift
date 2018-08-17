@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController
 //  testAppEDT
 //
 //  Created by Andres, Alex K. on 8/14/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordSoundsViewController: UIViewController {
     @IBOutlet weak var stopRecordButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var labelOutlet: UILabel!
